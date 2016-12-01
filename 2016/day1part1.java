@@ -42,13 +42,13 @@ public class Path {
         switch (currDir) {
         	case 0: coordinates[1] += steps;
         		break;
-        case 1: coordinates[0] += steps;
+            case 1: coordinates[0] += steps;
         		break;
-        case 2: coordinates[1] -= steps;
+            case 2: coordinates[1] -= steps;
         		break;
-        case 3: coordinates[0] -= steps;
+            case 3: coordinates[0] -= steps;
         		break;
-        default:
+            default:
         		break;
         }
     }
