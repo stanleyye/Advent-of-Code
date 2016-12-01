@@ -12,8 +12,6 @@ public class Path {
     public int shortestPath(String s) {
     // initialize coordinates. Used to calculate the shortest num of blocks to reach destination
     int[] coordinates = new int[2];
-    coordinates[0] = 0;
-    coordinates[1] = 0;
 
     // parse and extract the directions
     String[] directions = s.split(" ");
