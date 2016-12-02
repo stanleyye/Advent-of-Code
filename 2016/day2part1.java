@@ -18,7 +18,7 @@ public class Bathroom {
     	String lines[] = s.split("\\r?\\n");
     	String res = "";
     	String[][] keypad = new String[][]{
-        	{"1","2","3"},
+            {"1","2","3"},
             {"4","5","6"},
             {"7","8","9"}
         };
@@ -35,22 +35,22 @@ public class Bathroom {
     public int[] traverseKeypad(String movement, String[][] keypad, int startRow, int startCol) {
         int[] lastKey = new int[2];
         for (int m = 0; m < movement.length(); m++) {
-          switch (movement.charAt(m)) {
-          	case 'U':
-            	if (startRow > 0) startRow--;
-            	break;
-            case 'R':
-            	if (startCol < keypad[0].length - 1) startCol++;
-            	break;
-            case 'D':
-            	if (startRow < keypad.length -1) startRow++;
-            	break;
-            case 'L':
-            	if (startCol > 0) startCol--;
-            	break;
-            default:
-            	break;
-          }
+            switch (movement.charAt(m)) {
+                case 'U':
+                	if (startRow > 0) startRow--;
+                	break;
+                case 'R':
+                	if (startCol < keypad[0].length - 1) startCol++;
+                	break;
+                case 'D':
+                	if (startRow < keypad.length -1) startRow++;
+                	break;
+                case 'L':
+                	if (startCol > 0) startCol--;
+                	break;
+                default:
+                	break;
+            }
 
         }
         lastKey[0] = startRow;
