@@ -1,3 +1,3 @@
-# Advent of Code
+# Online Judges
 
-Solutions to some programming puzzles and problems from Advent of Code
+Solutions to various programming puzzles and problems from online judges
