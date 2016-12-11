@@ -9,7 +9,6 @@ public class Main {
         try {
             BufferedReader br = new BufferedReader (new FileReader("day8input.txt"));
             String line;
-            int res = 0;
             while ((line = br.readLine()) != null) {
                 Main.fillScreen(line);
             }
